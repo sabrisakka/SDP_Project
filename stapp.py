@@ -295,8 +295,7 @@ if st.button("Predict"):
         end_time = time.time()  # End timer
         prediction_time = end_time - start_time
        # st.write(f"Prediction time: {prediction_time:.2f} seconds")
-        st.write(f"<p>Prediction: {prediction}</p>", unsafe_allow_html=True)
-        st.write(f"<p style='color: green;'>Prediction time: {prediction_time:.2f} seconds</p>", unsafe_allow_html=True)
+        st.write(f"<p>Prediction time: <span style='color: green;'>{prediction_time:.2f}</span> seconds</p>", unsafe_allow_html=True)
 
     else:
         st.write("<h2>Please enter a sentence.</h2>")
