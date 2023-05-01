@@ -290,9 +290,9 @@ if st.button("Predict"):
         
         prediction = decode_sequence(new_sample.reshape(1, 34))
         
-        st.write(f"Prediction: {prediction}")
+        st.write(f"<h3>Prediction: {prediction}</h3>")
         end_time = time.time()  # End timer
         prediction_time = end_time - start_time
-        st.write(f"Prediction time: {prediction_time:.2f} seconds")
+        st.write(f"<h3>Prediction time: {prediction_time:.2f} seconds</h3")
     else:
-        st.write("Please enter a sentence.")
+        st.write("<h2>Please enter a sentence.</h2>")
